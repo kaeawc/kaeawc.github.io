@@ -19,3 +19,22 @@
   border-radius: 99em;
   border: 5px solid #fff;
 }
+
+.table-of-contents {
+    width: 20%;
+    max-width: 200px;
+    min-width: 140px;
+}
+
+.table-of-contents ul {
+    display: block;
+    padding-left: 10px;
+    margin: 0px;
+    margin-top: 10px;
+    background-color: #FA0;
+}
+
+.table-of-contents ul li {
+    display: block;
+
+}
