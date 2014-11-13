@@ -1,11 +1,121 @@
-<html>
-<head>
-  <title>Jason Pearson</title>
-  <link rel="stylesheet" type="text/css" href="css/main.css">
+<!DOCTYPE html>
+<!-- saved from url=(0054)http://letsmake.github.io/bettertogether/#localization -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Jason Pearson</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Helping to make GitHub better.">
+    <meta name="author" content="Jason Pearson">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/overrides.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-  <div class="jason profile"></div>
-  <h1>making all the things</h1>
-  <div></div>
+    <header class="jumbotron subhead" id="overview">
+      <div class="container">
+        <h1>making all the things</h1>
+        <p class="lead">I'm a software engineer with teaching experience, and this is where I write about my work.</p>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <div id="top" class="span3 toc">
+          <ul class="nav nav-list toc-sidenav affix-top">
+              <li class="nav-header">November 2014</li>
+              <li class="ending"><a class="scroll" href="#ios-simulator-8-1-jenkins">Testing iOS apps w/Jenkins</a></li>
+              <li class="start"><a class="scroll" href="#graphite-timestack">Graphite Timestack</a></li>
+              <li class="ending"><a class="scroll" href="#ios-8-1-jenkins">Building signed iOS 8.1 apps with Jenkins</a></li>
+              <li class="nav-header">October 2014</li>
+              <li class="start"><a class="scroll" href="#cabot-setup">Cabot Setup</a></li>
+              <li class=""><a class="scroll" href="#statsd-setup">Statsd Setup</a></li>
+              <li class=""><a class="scroll" href="#facebook-test-account-failure">Facebook bug with test accounts</a></li>
+              <li class=""><a class="scroll" href="#graphite-setup">Graphite Setup</a></li>
+              <li class=""><a class="scroll" href="#django-and-jenkins">Django and Jenkins</a></li>
+              <li class="ending"><a class="scroll" href="#testing-django-app-jenkins">Testing a Django App with Jenkins</a></li>
+              <li class="nav-header">September 2014</li>
+              <li class="start"><a class="scroll" href="#blackbox-testing-neo4j">Blackbox Testing Neo4J</a></li>
+              <li class="ending"><a class="scroll" href="#facebook-test-accounts-network">Building networks with Facebook Test Accounts</a></li>
+              <li class="nav-header">Etcetera</li>
+              <li class="start"><a class="scroll" href="#about">About</a></li>
+              <li class="ending"><a href="https://github.com/kaeawc/kaeawc.github.io">View Source</a></li>
+          </ul>
+        </div>
+        <div class="span9">
+          <section id="ios-simulator-8-1-jenkins">
+            <div class="page-header">
+              <h1>Testing iOS 8.1 app with iOS Simulator and Jenkins<a class="uparrow scroll" href="#top">↑</a></h1>
+            </div>
+            <p>Use JNLP web start, not headless mode and not SSH with xctool.  xcodebuild doesn't automatically kill or reset the iOS Simulator, which is necessary to make sure there are no leftover assets from previous builds.</p>
+          </section>
+          <section id="graphite-timestack">
+            <div class="page-header">
+              <h1>Graphite Timestack<a class="uparrow scroll" href="#top">↑</a></h1>
+            </div>
+            <p>I was reading <a href="">Graphite</a>'s documentation about <a href="">functions</a> when I came across <code>timeStack</code>.  </p>
+          </section>
+          <section id="build-sign-ios-8-1-jenkins">
+            <div class="page-header">
+              <h1>Building a signed iOS 8.1 app with Jenkins<a class="uparrow scroll" href="#top">↑</a></h1>
+            </div>
+            <p>Need to do more research for this.</p>
+          </section>
+          <section id="cabot-setup">
+            <div class="page-header">
+              <h1>Cabot Setup<a class="uparrow scroll" href="#top">↑</a></h1>
+            </div>
+            <p>Need to re-read the docs / steps I took / <a href="">current issues</a> in Github.</p>
+          </section>
+          <section id="facebook-test-account-failure">
+            <div class="page-header">
+              <h1>Facebook bug with test accounts<a class="uparrow scroll" href="#top">↑</a></h1>
+            </div>
+            <p>I found a <a href="https://developers.facebook.com/bugs/777357412310228">bug</a> in Facebook's API that allowed the creation of new test accounts but would return an error as a response.  It was fixed within a day and resolved within 2 days.</p>
+          </section>
+          <section id="statsd-setup">
+            <div class="page-header">
+              <h1>Statsd Setup<a class="uparrow scroll" href="#top">↑</a></h1>
+            </div>
+            <p>Need to re-read the docs / steps I took.  Should publish an ansible script to go along with it as a gist.</p>
+          </section>
+          <section id="graphite-setup">
+            <div class="page-header">
+              <h1>Graphite Setup<a class="uparrow scroll" href="#top">↑</a></h1>
+            </div>
+            <p>Need to re-read the docs / steps I took.  Should publish an ansible script to go along with it as a gist.</p>
+          </section>
+          <section id="facebook-test-account-networks">
+            <div class="page-header">
+              <h1>Using Facebook test accounts to build networks<a class="uparrow scroll" href="#top">↑</a></h1>
+            </div>
+            <p>Should be published at the same time I open source my facebook library.</p>
+          </section>
+          <section id="testing-django-app-jenkins">
+            <div class="page-header">
+              <h1>Testing a Django App with Jenkins<a class="uparrow scroll" href="#top">↑</a></h1>
+            </div>
+            <p>The current state of our Django testing environment is way hacked together, but I think its worth writing about to describe how someone might get started.</p>
+          </section>
+          <section id="about">
+            <div class="page-header">
+              <h1>About Me<a class="uparrow scroll" href="#top">↑</a></h1>
+            </div>
+            <p>Full stack dev currently working with Python, Android, Ansible, MongoDB, Neo4J, and Redis. Likely born at a young age. Passionate about open source tech, creating and breaking things, and getting everyone teaching and learning from each other. Really loves apples, running, and sunshine.</p>
+            <div class="jason profile"></div>
+          </section>
+        </div><!--/span-->
+      </div><!--/row-->
+    </div><!--/.fluid-container-->
+
+
+    <footer class="footer">
+      <div class="container">
+        <p class="pull-right">This site is my personal blog of various coding adventures.</p>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/ux.js"></script>
 </body>
 </html>
