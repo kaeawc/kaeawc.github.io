@@ -164,29 +164,29 @@
               <h4>Get API key</h4>
               <p>
                 Once we're logged in we see the Mailchimp dashboard.  We want to get into account settings so click on the account name on the left hand menu.<br />
-                <p>Click on <code>Account</code></p>
-                <p>Click on <code>Extras</code></p>
-                <p>Click on <code>API keys</code></p>
+                <p>Click on <b>Account</b></p>
+                <p>Click on <b>Extras</b></p>
+                <p>Click on <b>API keys</b></p>
                 <p>At this point if you haven't already created an API key, do so now.  Select the full text of the API key and save it somewhere for later.</p>
               </p>
               <h4>Create List</h4>
               <p>In Mailchimp you must specifically subscribe an email address to a list.  Each list keeps track of the people who unsubscribe.  Goto the Lists menu and create one.  You'll be prompted for a name which users will see on confirmation emails as well as your company information and a short explanation to the user telling them why they're subscribed.</p>
               <h4>Get List ID</h4>
-              <p>You should be able to find the ID of the list you just created by going to <code>Settings</code> and clicking on <code>List name &amps; defaults</code>. This will take you to a page where <b>List ID</b> is a heading on the right side of the page.</p>
+              <p>You should be able to find the ID of the list you just created by going to <b>Settings</b> and clicking on <b>List name &amps; defaults</b>. This will take you to a page where <b>List ID</b> is a heading on the right side of the page.</p>
               <h4>Get Mailchimp client (Python)</h4>
               <p><code>
                 pip install mailchimp
               </code></p>
               <h4>Subscribe a user through client</h4>
-              <code>
+              <pre><code>
 apikey = 'you_api_key'
 list_id = 'your_list_id'
 from mailchimp import Mailchimp
 mailchimp = Mailchimp(apikey=apikey)
 mailchimp.lists.subscribe(id=list_id, email={u"email",u"youremailaddress+testingmailchimp@yourcompany.com"})
-              </code>
+              </code></pre>
               <h4>Check confirmation email</h4>
-              <p>The email address you used to test the subscription API should have received a confirmation email.  Only after clicking <code>Yes, subscribe me to this list.</code> will a record appear in the Mailchimp list you created.</p>
+              <p>The email address you used to test the subscription API should have received a confirmation email.  Only after clicking <b>Yes, subscribe me to this list.</b> will a record appear in the Mailchimp list you created.</p>
               <p>The user should see a webpage with the title of your list after clicking subscribe.  If you setup a link to your website the user should be able to reach it from this page.</p>
               <hr>
               <p>At this point you have everything you need to automatically subscribe users to your Mailchimp lists. The best time to subscribe someone is as soon as they've signedup or registered for your product. In my experience the response time for any single Mailchimp subscribe API call can widely vary between 1-4 seconds, and therefore in applications I've added it to we make it an offline task that gets started once registration is complete.</p>
