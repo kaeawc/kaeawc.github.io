@@ -5,12 +5,9 @@
     <meta charset="utf-8">
     <title>Jason Pearson</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description" content="making all the things with code">
     <meta name="author" content="Jason Pearson">
-    <link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
-    <link type="text/css" rel="stylesheet" href="css/jquery.ui.all.css" />
-    <link type="text/css" rel="stylesheet" href="css/jquery.tocify.css" />
-    <link type="text/css" rel="stylesheet" href="css/prettify.css" />
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -26,12 +23,15 @@
           </div>
         </div>
         <div class="span9">
-          <div class="well">
-            <h2 class="well">Jason Pearson</h2>
-            <div class="jason profile"></div>
+          <div>
+
+            <div id="about-me" class="span12">
+              <h2 class="">Jason Pearson</h2>
+              <div class="jason profile"></div>
+            </div>
             <p class="lead">Software engineer currently working with Python, Android, Ansible, MongoDB, Neo4J, and Redis. Likely born at a young age. Passionate about open source tech, creating and breaking things, and getting everyone teaching and learning from each other. Really loves apples, running, and sunshine. Might write about other things here sometimes.</p>
           </div>
-          <h2 class="well">November 2014</h2>
+          <h2>November 2014</h2>
           <article>
             <h3>Android Genymotion Testing</h3>
             <p></p>
@@ -72,7 +72,7 @@
             <h3>Building signed iOS 8.1 apps with Jenkins</h3>
             <p></p>
           </article>
-          <h2 class="well">October 2014</h2>
+          <h2>October 2014</h2>
           <article>
             <h3>Cabot Setup</h3>
             <p></p>
@@ -85,7 +85,7 @@
             <h3>Facebook bug with test accounts</h3>
             <p></p>
           </article>
-          <h2 class="well">September 2014</h2>
+          <h2>September 2014</h2>
           <article>
             <h3>Graphite &amp; Statsd Setup</h3>
             <p>
@@ -104,12 +104,12 @@
             <h3>Testing a Django App</h3>
             <p></p>
           </article>
-          <h2 class="well">August 2014</h2>
+          <h2>August 2014</h2>
           <article>
             <h3>Python Testing</h3>
             <iframe src="https://docs.google.com/presentation/embed?id=1NsqQ4u6iaPEc5tGLkF-990I4OlAbNnj5pUTbD6AVxWM&amp;start=false&amp;loop=false&amp;" frameborder="0" width="520" height="405"></iframe>
           </article>
-          <h2 class="well">July 2014</h2>
+          <h2>July 2014</h2>
           <article>
             <h3>Android Product Flavors</h3>
             <ul>
@@ -136,8 +136,8 @@
               <li>Project structure</li>
             </ul>
           </article>
-          <h2 class="well">June 2014</h2>
-          <article class="well">
+          <h2>June 2014</h2>
+          <article>
             <h3>Mailchimp Webhooks</h3>
             <ul>
               <li>Read Mailchimp webhook spec</li>
@@ -151,7 +151,7 @@
               </li>
             </ul>
           </article>
-          <h2 class="well">April 2014</h2>
+          <h2>April 2014</h2>
           <article>
             <h3>Mailchimp Subscription Automation</h3>
             <p>When you're a small startup, you have zero email domain reputation. Therefore it makes sense to use email providers like Mailchimp to send out product communications to let users know about updates, new features, etcetera.</p>
@@ -174,17 +174,9 @@
               <h4>Get List ID</h4>
               <p>You should be able to find the ID of the list you just created by going to <b>Settings</b> and clicking on <b>List name &amps; defaults</b>. This will take you to a page where <b>List ID</b> is a heading on the right side of the page.</p>
               <h4>Get Mailchimp client (Python)</h4>
-              <p><code>
-                pip install mailchimp
-              </code></p>
+              <div class="gist">$ pip install mailchimp</div>
               <h4>Subscribe a user through client</h4>
-              <pre><code>
-apikey = 'you_api_key'
-list_id = 'your_list_id'
-from mailchimp import Mailchimp
-mailchimp = Mailchimp(apikey=apikey)
-mailchimp.lists.subscribe(id=list_id, email={u"email",u"youremailaddress+testingmailchimp@yourcompany.com"})
-              </code></pre>
+              <script src="https://gist.github.com/kaeawc/54e7b8ca22e686d1a767.js"></script>
               <h4>Check confirmation email</h4>
               <p>The email address you used to test the subscription API should have received a confirmation email.  Only after clicking <b>Yes, subscribe me to this list.</b> will a record appear in the Mailchimp list you created.</p>
               <p>The user should see a webpage with the title of your list after clicking subscribe.  If you setup a link to your website the user should be able to reach it from this page.</p>
@@ -195,7 +187,7 @@ mailchimp.lists.subscribe(id=list_id, email={u"email",u"youremailaddress+testing
           <h3>Measuring Net Promoter Score with Delighted</h3>
           <p>There are lots of metrics to measure a startup by. <a href="http://en.wikipedia.org/wiki/Net_Promoter">Net Promoter Score</a> is how a company can measure customer's loyalty and willingness to promote your product.</p>
           </article>
-          <h2 class="well">Etcetera</h2>
+          <h2>Etcetera</h2>
           <p></p>
 
         </div><!--/span-->
@@ -206,35 +198,8 @@ mailchimp.lists.subscribe(id=list_id, email={u"email",u"youremailaddress+testing
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery-1.8.3.min.js"></script>
-    <script src="js/jquery-ui-1.9.1.custom.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/jquery.tocify.js"></script>
-    <script src="js/prettify.js"></script>
-    <script src="js/githubrepo.js"></script>
-    <script>
-        $(function() {
-
-            var toc = $("#toc").tocify({ selectors: "h2, h3, h4" }).data("toc-tocify");
-            prettyPrint();
-            $(".optionName").popover({ trigger: "hover" });
-
-        });
-    </script>
-
-    <script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-30888305-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/gist.css" />
   </body>
 </html>
