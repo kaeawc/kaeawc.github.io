@@ -1,0 +1,71 @@
+
+.gist {
+  font-size:13px;
+  line-height:18px;
+  margin-bottom:20px;
+  width:100%;
+  color: #DDD;
+  font-family:Menlo,'Lucida Console',monospace !important
+}
+
+.gist .gist-file {
+  border-color: #333;
+}
+.gist .gist-data {
+  font-size:13px;
+  line-height:18px;
+  border-color: #333;
+}
+.gist .line-numbers {
+  background-color: #444;
+  font-size:13px;
+  line-height:18px;
+  border-color: #333;
+}
+.gist .line-number {
+  background-color: #444;
+  color: #888;
+}
+
+.gist-syntax .n {
+  color: #DDD;
+}
+
+.gist-syntax .o {
+  color: #DDD;
+}
+
+.gist-syntax .s {
+  color: #CC0;
+}
+
+.gist-syntax .kn {
+  color: #fa0;
+}
+
+.gist-syntax .nn {
+  color: #DDD;
+}
+
+.gist-syntax .p {
+  color: #DDD;
+}
+
+.gist-syntax .nb {
+  color: #a80;
+}
+
+.gist pre {
+  font-family:Menlo,'Lucida Console',monospace !important
+}
+.gist .gist-meta {
+  font-family:Menlo,'Lucida Console',monospace !important;
+  background-color: #222;
+}
+.gist-meta a {
+  color:#26a !important;
+  text-decoration:none
+}
+.gist-meta a:hover {
+  color:#0e4071 !important
+}
